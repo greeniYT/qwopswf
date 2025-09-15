@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <style></style>
+    <title>Sausage Flip</title>
+    <script src="js/poki.js"></script>
+    <script src="js/playcanvas-stable.min.js"></script>
+    <script src="js/__settings__.js"></script>
+	<script src="js/adinLoader.js"></script>
+</head>
+<body>
+    <script src="js/__modules__.js"></script>
+    <script src="js/__start__.js"></script>
+    <script src="js/__loading__.js"></script>
+		<script>
+       if (typeof getAdinDomain !== 'undefined') {
+           const bodyTag = document.getElementsByTagName('body')[0];
+
+           let addAdinPreroll = document.createElement('script');
+            addAdinPreroll.src = getAdinDomain;
+            bodyTag.appendChild(addAdinPreroll);
+        }
+  </script>
+
+
+</body></html>
