@@ -1,0 +1,21 @@
+:root, :host {
+  --fa-family-brands: 'Font Awesome 7 Brands';
+  --fa-font-brands: normal 400 1em/1 var(--fa-family-brands); }
+
+@font-face {
+  font-family: 'Font Awesome 7 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"); }
+
+.fab,
+.fa-brands,
+.fa-classic.fa-brands {
+  --fa-family: var(--fa-family-brands);
+  --fa-style: 400;
+}
+
+.fa-apple { --fa: "\f179"; }
+.fa-discord { --fa: "\f392"; }
+.fa-youtube { --fa: "\f167"; }
