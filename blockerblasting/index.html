@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<script>
+        window.addEventListener("load", function () {
+            function onTouchPreventDefault(event) {
+                event.preventDefault();
+            }
+            document.addEventListener("touchmove", onTouchPreventDefault, false);
+            document.addEventListener("touchstart", onTouchPreventDefault, false);}, false);
+	</script>
+
+	<style type="text/css">
+
+		html {
+			overflow-y: hidden;
+		}
+
+		@font-face {
+			font-family: 'gameFont';
+			src: url('fonts/gamefont.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		body {
+			/* default opacity of 1, if animation is not supported */
+			opacity: 1;
+
+			background: linear-gradient(to bottom, #0042BC 0%, #0048CC 50%, #0055F0 100%);
+			margin: 0;
+			padding: 0;
+
+			animation-name: fadeIn;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in;
+			animation-duration: 0.5s;
+
+			-webkit-touch-callout: none !important;                /* prevent callout to copy image, etc when tap to hold */
+			-webkit-text-size-adjust: none !important;             /* prevent webkit from resizing text to fit */
+			-webkit-user-select: none !important;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+		}
+	</style>
+
+	<title>Block Blaster Puzzle</title>
+
+	<link rel="icon" type="image/png" href="images/icon-48x48.png" sizes="48x48">
+	<link rel="icon" type="image/png" href="images/icon-72x72.png" sizes="72x72">
+	<link rel="icon" type="image/png" href="images/icon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/icon-144x144.png" sizes="144x144">
+	<link rel="icon" type="image/png" href="images/icon-152x152.png" sizes="152x152">
+	<link rel="icon" type="image/png" href="images/icon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="images/icon-512x512.png" sizes="512x512">
+
+	<link rel="apple-touch-icon" type="image/png" href="images/icon-48x48.png" sizes="48x48">
+	<link rel="apple-touch-icon" type="image/png" href="images/icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" type="image/png" href="images/icon-96x96.png" sizes="96x96">
+	<link rel="apple-touch-icon" type="image/png" href="images/icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" type="image/png" href="images/icon-152x152.png" sizes="152x152">
+	<link rel="apple-touch-icon" type="image/png" href="images/icon-192x192.png" sizes="192x192">
+	<link rel="apple-touch-icon" type="image/png" href="images/icon-512x512.png" sizes="512x512">
+
+
+
+
+
+    <link rel="manifest" href="./manifest.json">
+    <script src="js/msstart-v1.0.0-rc.13.min.js"></script>
+    <script src="js/fetchData.js"></script>
+</head>
+
+ <body>
+
+
+
+
+
+	 <script src="js/phaserjs_editor_scripts_core.js"></script>
+	 <script src="js/phaserjs_editor_scripts_simple_animations.js"></script>
+	 <script src="js/PreloadBarUpdaterScript.js"></script>
+
+
+	 <script src="js/game.js"></script>
+        
+
+	 <!--<script data-consolejs-channel="7cfcac98-1e40-db2c-ee80-e4022770e3f5" src="https://remotejs.com/agent/agent.js"></script>-->
+
+	 <div class="font_preload" style="opacity: 0">
+		 <span style="font-family: 'gameFont', 'Arial', normal;"></span>
+	 </div>
+
+
+	<div id="ads"></div>
+ 
+
+
+</body></html>
